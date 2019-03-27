@@ -1,0 +1,67 @@
+html, body {
+	margin-top: 100px;
+	margin-bottom: -100px;
+}
+
+@font-face {
+    font-family: ubuntu_mono;
+    src: url(../fonts/UbuntuMono-R.ttf);
+}
+
+#background {
+	background-image: url(../images/background.png);
+	background-repeat: no-repeat;
+	transform: scale(0.75, 0.75);
+	position: relative;
+	height: 339px;
+	width: 1126px;
+    top: -268px;
+    left: -250px;
+	z-index: -5;
+}
+
+#back {
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 50px;
+    border-radius: 5px;
+    height: 300px;
+    width: 800px;
+    background-color: #E6E6E6;
+}
+
+#display_beg:after {
+	color: #00FF00;
+	content: "run generateCityFr.sh";
+	display: block;
+}
+
+#display {
+    color: white;
+    font-family: ubuntu_mono;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+	margin-top : -339px;
+    height: 200px;
+    width: 700px;
+    background-color: black;
+    overflow-y: scroll;
+}
+
+#generate {
+    position: relative;
+    top: 25px;
+    left: 350px;
+    border: 0px;
+    color: white;
+    margin: auto;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+    background-color: #2E8AF2;
+}
+
+#generate:hover {
+    background-color: #63A6F2;
+}
